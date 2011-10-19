@@ -48,6 +48,7 @@ class BaseTest < Assert::Context
   end
 
 end
+```
 
 ## License
 
