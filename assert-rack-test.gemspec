@@ -2,10 +2,10 @@
 require File.expand_path('../lib/assert-rack-test/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["jcredding"]
-  gem.email         = ["TempestTTU@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.authors       = ["Kelly Redding", "Collin Redding"]
+  gem.email         = ["collin.redding@me.com"]
+  gem.description   = %q{Assert with Rack::Test}
+  gem.summary       = %q{Assert with Rack::Test}
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "assert-rack-test"
   gem.require_paths = ["lib"]
   gem.version       = Assert::Rack::Test::VERSION
+
+  gem.add_dependency("assert",      ["~>0.7"])
+  gem.add_dependency("rack-test",   ["~>0.6.1"])
 end
+  
