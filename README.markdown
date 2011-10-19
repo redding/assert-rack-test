@@ -1,4 +1,4 @@
-# Assert-Mocha
+# Assert-Rack-Test
 
 The [assert](https://github.com/teaminsight/assert) gem with [rack/test](https://github.com/brynary/rack-test). This gem just mixes in the Rack::Test methods into the Assert context, allowing you to use Rack::Test's get, post, put, etc... methods within an Assert context.
 
