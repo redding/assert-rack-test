@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Assert::Rack::Test::VERSION
 
-  gem.add_dependency("assert",      ["~>1.0"])
+  gem.add_dependency("assert",      ["~>2.0"])
   gem.add_dependency("rack-test",   ["~>0.6"])
 end
 
