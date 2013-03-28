@@ -1,6 +1,6 @@
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
-gem 'rake', '~> 0.9.2'
-
-# Specify your gem's dependencies in assert-rack-test.gemspec
 gemspec
+
+gem 'rake'
+gem 'pry'

@@ -1,8 +1,9 @@
 require 'assert'
+require 'assert-rack-test'
 
 module Assert::Rack::Test
 
-  class BaseTest < Assert::Context
+  class BaseTests < Assert::Context
     desc "Assert::Context"
     setup do
       @class = Assert::Context
