@@ -8,16 +8,17 @@ Gem::Specification.new do |gem|
   gem.version       = Assert::Rack::Test::VERSION
   gem.authors       = ["Collin Redding", "Kelly Redding"]
   gem.email         = ["collin.redding@me.com, kelly@kellyredding.com"]
-  gem.description   = %q{Assert with Rack::Test}
   gem.summary       = %q{Assert with Rack::Test}
+  gem.description   = %q{Assert with Rack::Test}
   gem.homepage      = "https://github.com/redding/assert-rack-test"
+  gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_dependency("assert",    ["~> 2.0"])
+  gem.add_dependency("assert",    ["~> 2.15.1"])
   gem.add_dependency("rack-test", ["~> 0.6"])
 
 end

@@ -3,19 +3,17 @@ require 'assert-rack-test'
 
 module Assert::Rack::Test
 
-  class BaseTests < Assert::Context
+  class UnitTests < Assert::Context
     desc "Assert::Context"
     setup do
-      @class = Assert::Context
-      @instance = Assert::Context.new
+      @context_class = Assert::Context
     end
-    subject{ @instance }
-
-    should have_instance_methods :get, :post, :put, :delete
+    subject{ @context_class }
 
     should "include the Rack::Test::Methods" do
-      assert_includes Rack::Test::Methods, @class.included_modules
+      assert_includes Rack::Test::Methods, subject
     end
+
   end
 
 end
