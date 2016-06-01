@@ -7,3 +7,13 @@ $LOAD_PATH.unshift(File.expand_path("../..", __FILE__))
 # require pry for debugging (`binding.pry`)
 require 'pry'
 
+require 'test/support/factory'
+
+# 1.8.7 backfills
+
+# Array#sample
+if !(a = Array.new).respond_to?(:sample) && a.respond_to?(:choice)
+  class Array
+    alias_method :sample, :choice
+  end
+end
