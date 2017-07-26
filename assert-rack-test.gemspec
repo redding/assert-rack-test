@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency("assert",    ["~> 2.16.1"])
-  gem.add_dependency("rack-test", ["~> 0.6"])
+  gem.add_dependency("rack-test", ["~> 0.6.3"])
 
 end
 
