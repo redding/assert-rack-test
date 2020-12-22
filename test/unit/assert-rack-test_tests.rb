@@ -1,19 +1,17 @@
-require 'assert'
-require 'assert-rack-test'
+require "assert"
+require "assert-rack-test"
 
 module Assert::Rack::Test
-
   class UnitTests < Assert::Context
     desc "Assert::Context"
+    subject{ @context_class }
+
     setup do
       @context_class = Assert::Context
     end
-    subject{ @context_class }
 
     should "include the Rack::Test::Methods" do
-      assert_includes Rack::Test::Methods, subject
+      assert_that(subject).includes(Rack::Test::Methods)
     end
-
   end
-
 end
