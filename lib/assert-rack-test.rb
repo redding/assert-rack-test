@@ -1,6 +1,11 @@
+# frozen_string_literal: true
+
 require "assert/context"
 require "rack/test"
 require "assert-rack-test/version"
+
+module Assert; end
+module Assert::Rack; end
 
 module Assert::Rack::Test
   def self.included(klass)
