@@ -20,10 +20,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.required_ruby_version = "~> 2.5"
+  gem.required_ruby_version = ">= 2.5"
 
-  gem.add_development_dependency("assert",           ["~> 2.19.3"])
-  gem.add_development_dependency("much-style-guide", ["~> 0.6.0"])
+  gem.add_development_dependency("much-style-guide", ["~> 0.6.7"])
+  gem.add_development_dependency("assert",           ["~> 2.19.8"])
 
   gem.add_dependency("rack-test", ["~> 1.1"])
 end
